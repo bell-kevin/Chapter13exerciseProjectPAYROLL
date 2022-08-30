@@ -21,8 +21,8 @@ public class Chapter13exerciseProjectPAYROLL {
         staff.add(new Hourly("Dan", "Peters"));
         managers.add(new Salary("Ann", "Barrett"));
         managers.add(new Salary("Frank", "Greene"));
-        for (int i = 0; i < 3; i++) {
-            System.out.println("How many hours for employee " + null);
+        for (int i = 0; i < staff.size(); i++) {
+            System.out.println("How many hours for employee " + staff.get(i) + " ");
         } // end for loop
     } // end main method
 } // end Chapter13exerciseProjectPAYROLL class
