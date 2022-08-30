@@ -28,10 +28,10 @@ public class Chapter13exerciseProjectPAYROLL {
         System.out.println("");
         System.out.println("Payroll Results \n");
         for (Salary salary : managers){
-            System.out.printf("Manager %19s: \t\t$%1.2f\n", salary.getFullName().toUpperCase(), salary.weeklyPay(salary.getAnnualPayRate()));
+            System.out.printf("Manager %19s: \t$%1.2f\n", salary.getFullName().toUpperCase(), salary.weeklyPay(salary.getAnnualPayRate()));
         } // end for-each loop
         for(Hourly hourly : staff){
-            System.out.printf("Employee %19s: \t\t$%1.2f\n", hourly.getFullName().toUpperCase(), hourly.grossPay(hourly.getHours(), hourly.getPayRate()));
+            System.out.printf("Employee %18s: \t$%1.2f\n", hourly.getFullName().toUpperCase(), hourly.grossPay(hourly.getHours(), hourly.getPayRate()));
         } // end for-each loop
     } // end main method
 } // end Chapter13exerciseProjectPAYROLL class
