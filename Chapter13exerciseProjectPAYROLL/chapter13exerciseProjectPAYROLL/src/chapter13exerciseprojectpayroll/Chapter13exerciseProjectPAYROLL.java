@@ -26,7 +26,7 @@ public class Chapter13exerciseProjectPAYROLL {
             System.out.print("How many hours for employee "
                     + hourly.getFullName() + ": ");
             hours = computerKeyboardInput.nextDouble();
-            hours = hourly.getHours();
+            hourly.setHours(hours);
         } // end for-each loop
         System.out.println("");
         System.out.println("Payroll Results \n");
@@ -36,7 +36,7 @@ public class Chapter13exerciseProjectPAYROLL {
                     salary.weeklyPay(salary.getAnnualPayRate()));
         } // end for-each loop
         for (Hourly hourly : staff) {
-            System.out.printf("Employee %18s: \t$%1.2f  \t\t%.2f hours, "
+            System.out.printf("Employee %18s: \t$%1.2f  \t%.2f hours, "
                     + "\t$%1.2f/hr\n",
                     hourly.getFullName().toUpperCase(),
                     hourly.grossPay(hourly.getHours(), hourly.payRate),
