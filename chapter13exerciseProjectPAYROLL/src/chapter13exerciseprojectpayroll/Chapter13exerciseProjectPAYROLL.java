@@ -27,6 +27,8 @@ public class Chapter13exerciseProjectPAYROLL {
         } // end for-each loop
         System.out.println("");
         System.out.println("Payroll Results \n");
-        
+        System.out.print("Manager");
+        System.out.printf("%19s", "ANN BARRETT:");
+        System.out.printf("%15s", "$1,000.00\n");
     } // end main method
 } // end Chapter13exerciseProjectPAYROLL class
