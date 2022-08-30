@@ -27,8 +27,8 @@ public class Chapter13exerciseProjectPAYROLL {
         } // end for-each loop
         System.out.println("");
         System.out.println("Payroll Results \n");
-        System.out.print("Manager");
-        System.out.printf("%19s", "ANN BARRETT:");
-        System.out.printf("%15s", "$1,000.00\n");
+        for (Salary salary : managers){
+            System.out.printf("Managers %19s: \t\t$%1.2f\n", salary.getFullName().toUpperCase(), salary.weeklyPay(salary.getAnnualPayRate()));
+        } // end for-each loop
     } // end main method
 } // end Chapter13exerciseProjectPAYROLL class
