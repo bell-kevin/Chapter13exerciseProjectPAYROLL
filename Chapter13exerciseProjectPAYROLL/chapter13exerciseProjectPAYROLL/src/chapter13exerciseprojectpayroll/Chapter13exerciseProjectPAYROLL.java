@@ -36,7 +36,8 @@ public class Chapter13exerciseProjectPAYROLL {
                     salary.weeklyPay(salary.getAnnualPayRate()));
         } // end for-each loop
         for (Hourly hourly : staff) {
-            System.out.printf("Employee %18s: \t$%1.2f  \t\t%.2f hours, \t$%1.2f/hr\n",
+            System.out.printf("Employee %18s: \t$%1.2f  \t\t%.2f hours, "
+                    + "\t$%1.2f/hr\n",
                     hourly.getFullName().toUpperCase(),
                     hourly.grossPay(hourly.getHours(), hourly.payRate),
                     hourly.hours, hourly.payRate);
