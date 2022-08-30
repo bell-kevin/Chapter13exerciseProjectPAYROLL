@@ -12,6 +12,7 @@ import java.util.Scanner;
 public class Chapter13exerciseProjectPAYROLL {
 
     public static void main(String[] args) {
+        double hours = 0;
         Scanner computerKeyboardInput = new Scanner(System.in);
         System.out.println("Ch 13 Payroll by Kevin Bell \n");
         ArrayList<Hourly> staff = new ArrayList<>();
@@ -22,16 +23,17 @@ public class Chapter13exerciseProjectPAYROLL {
         managers.add(new Salary("Ann", "Barrett", 52000));
         managers.add(new Salary("Frank", "Greene", 48000));
         for (Hourly hourly : staff) {
-            System.out.print("How many hours for employee " + hourly.getFullName()+": ");
-            double hours = computerKeyboardInput.nextDouble();
+            System.out.print("How many hours for employee " + hourly.getFullName() + ": ");
+            hours = computerKeyboardInput.nextDouble();
+            hours = hourly.getHours();
         } // end for-each loop
         System.out.println("");
         System.out.println("Payroll Results \n");
-        for (Salary salary : managers){
+        for (Salary salary : managers) {
             System.out.printf("Manager %19s: \t$%1.2f\n", salary.getFullName().toUpperCase(), salary.weeklyPay(salary.getAnnualPayRate()));
         } // end for-each loop
-        for(Hourly hourly : staff){
-            System.out.printf("Employee %18s: \t$%1.2f\n", hourly.getFullName().toUpperCase(), hourly.grossPay(hourly.getHours(), hourly.getPayRate()));
+        for (Hourly hourly : staff) {
+            System.out.printf("Employee %18s: \t$%1.2f hours \t%f/hr\n", hourly.getFullName().toUpperCase(), hourly.grossPay(hourly.getHours(), hourly.payRate), hourly.hours);
         } // end for-each loop
     } // end main method
 } // end Chapter13exerciseProjectPAYROLL class
