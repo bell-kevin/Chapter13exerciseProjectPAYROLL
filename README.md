@@ -1,6 +1,6 @@
 # Chapter13exerciseProjectPAYROLL
 
-a project that will simulate a weekly payroll. This payroll includes 2 types of employees -- managers and hourly employees. Managers have annual salaries, hourly employees have are paid by the hour.
+A project that will simulate a weekly payroll. This payroll includes 2 types of employees -- managers and hourly employees. Managers have annual salaries, hourly employees have are paid by the hour.
 
 Use the following data:
 
@@ -28,18 +28,13 @@ You will need to use printf() to get the style of results specified in the sampl
 
 Take a screenshot of your execution of the sample session, then run the program again with different hours for the hourly employees and take a screenshot.
 
- 
-
 Submission: the specified screenshots (of execution of the program and successful unit tests) and the root folder for the project
-
- 
 
 Pay careful attention to the rubric for this assignment.
 
 Note that you must use correct formatting in the code -- appropriate indentation is most important. You can use Shift-Alt-F to have NetBeans automatically format the code correctly. If the formatting is incorrect, it will be returned to you for changes with a grade of zero.
 
 Note: You need to submit the whole project for these assignments. In File Explorer, go to the location where you created the project. There will be a folder with the name of your project -- that is the root folder of the project.  If you submit the root folder of the project, the instructor can run it on a different machine to grade it. If you don't submit the proper folder, it won't run on another machine, and the assignment will be marked with a zero.
-
 
 == We're Using GitHub Under Protest ==
 
