@@ -16,13 +16,13 @@ public class Chapter13exerciseProjectPAYROLL {
         System.out.println("Ch 13 Payroll by Kevin Bell");
         ArrayList<Hourly> staff = new ArrayList<>();
         ArrayList<Salary> managers = new ArrayList<>();
-        staff.add(new Hourly("Barry", "Johnson"));
-        staff.add(new Hourly("Cathy", "Davidson"));
-        staff.add(new Hourly("Dan", "Peters"));
-        managers.add(new Salary("Ann", "Barrett"));
-        managers.add(new Salary("Frank", "Greene"));
-        for (int i = 0; i < staff.size(); i++) {
-            System.out.println("How many hours for employee " + staff.get(i) + " ");
-        } // end for loop
+        staff.add(new Hourly("Barry", "Johnson", 12.50));
+        staff.add(new Hourly("Cathy", "Davidson", 15.00));
+        staff.add(new Hourly("Dan", "Peters", 10.00));
+        managers.add(new Salary("Ann", "Barrett", 52000));
+        managers.add(new Salary("Frank", "Greene", 48000));
+        for (Hourly emp : staff) {
+            System.out.println("How many hours for employee " + emp.getFullName()+": ");   
+        } // end for-each loop
     } // end main method
 } // end Chapter13exerciseProjectPAYROLL class
