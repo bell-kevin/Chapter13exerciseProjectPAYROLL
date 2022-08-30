@@ -14,5 +14,6 @@ public class Chapter13exerciseProjectPAYROLL {
         System.out.println("Ch 13 Payroll by Kevin Bell");
         ArrayList<Hourly> staff = new ArrayList<>();
         ArrayList<Salary> managers = new ArrayList<>();
+        //start here tuesday morning with anon objects
     } // end main method
 } // end Chapter13exerciseProjectPAYROLL class
