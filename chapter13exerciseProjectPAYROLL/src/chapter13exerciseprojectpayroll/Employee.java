@@ -1,5 +1,5 @@
 /** ****************************************************************************
- * Driver.java
+ * Employee.java
  * Kevin Bell
  *
  * This is the base/super class for an Employee.
@@ -8,7 +8,7 @@ package chapter13exerciseprojectpayroll;
 
 class Employee {
 
-    public String firstName = "kevin", lastName = "bell";
+    public String firstName, lastName;
 
     public Employee(String firstName, String lastName) {
         this.firstName = firstName;
