@@ -25,8 +25,7 @@ class Employee {
 
     public String getFullName() {
         String fullName = firstName.concat(" " + lastName);
-        System.out.println(fullName);
-        return firstName.concat(lastName);
+        return firstName.concat(" " + lastName);
     } // end accessor method
 
     void setFirstName(String firstName) {
